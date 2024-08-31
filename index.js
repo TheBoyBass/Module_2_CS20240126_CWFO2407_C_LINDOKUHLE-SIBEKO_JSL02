@@ -32,9 +32,15 @@ const addNewGoal = () => {
     }
 
     
-    // ⚠️ Hint 4: Event listener
-    // The event listener that removes goals when clicked is not related to this issue.
-    // Focus on preventing duplicates for now.
+    //Remove Element Event listener
+    goalList.addEventListener('click', (event) => {
+        if (event.target.tagName === 'LI') {
+            event.target.remove();
+        }
+    });
+
+
+
 
 
     
